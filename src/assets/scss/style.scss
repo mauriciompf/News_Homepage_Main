@@ -7,10 +7,13 @@
 }
 
 body {
+  height: 100vh;
   font-size: 15px;
   font-family: "Inter", sans-serif;
+}
 
-  margin: 3rem 0;
+.wrapper {
+  padding: 3rem 0;
 }
 
 .container {
@@ -35,4 +38,9 @@ button {
   background: transparent;
   display: block;
   height: fit-content;
+}
+
+button:focus,
+button:hover {
+  outline: 1px solid $primary-soft-orange;
 }

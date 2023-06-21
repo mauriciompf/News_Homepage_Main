@@ -1,0 +1,44 @@
+@use "./colors" as *;
+
+.bg-body {
+  background-color: color-mix(
+    in srgb,
+    $neutral-very-dark-blue 25%,
+    $neutral-off-white
+  );
+}
+
+.aside {
+  display: none;
+
+  &.active {
+    display: block;
+    position: fixed;
+    width: 60%;
+    background-color: $neutral-off-white;
+    height: 100%;
+    overflow: auto;
+    right: 0;
+  }
+
+  &__button-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+
+  & ul {
+    margin-top: 7rem;
+  }
+
+  & a:hover {
+    color: $primary-soft-red;
+  }
+
+  & a {
+    display: block;
+    color: $neutral-very-dark-blue;
+    padding: 1rem;
+    text-decoration: none;
+  }
+}

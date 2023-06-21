@@ -28,15 +28,6 @@
     }
   }
 
-  &__list.active {
-    display: block;
-    position: absolute;
-    right: 0;
-    background-color: $neutral-grayish-blue;
-    width: 50%;
-    height: 100vh;
-  }
-
   &__list-item a {
     color: $neutral-off-white;
 
