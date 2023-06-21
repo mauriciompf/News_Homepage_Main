@@ -1,0 +1,82 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 2.5rem;
+  align-items: center;
+}
+.header__button-menu {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .header__button-menu {
+    display: none;
+  }
+}
+.header__list {
+  display: none;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+.header__list.active {
+  display: block;
+  position: absolute;
+  right: 0;
+  background-color: hsl(233, 8%, 79%);
+  width: 50%;
+  height: 100vh;
+}
+.header__list-item a {
+  color: hsl(36, 100%, 99%);
+}
+@media screen and (min-width: 768px) {
+  .header__list-item a {
+    color: hsl(236, 13%, 42%);
+  }
+}
+.header__list-item a:focus, .header__list-item a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  margin: 3rem 0;
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: transparent;
+  font: inherit;
+  cursor: pointer;
+  background: transparent;
+  display: block;
+  height: fit-content;
+}
+
+/*# sourceMappingURL=style.css.map */
