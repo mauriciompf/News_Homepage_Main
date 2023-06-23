@@ -1,0 +1,5 @@
+.main {
+  &__container > *:not(:last-of-type) {
+    margin-block-end: 2.5rem;
+  }
+}
