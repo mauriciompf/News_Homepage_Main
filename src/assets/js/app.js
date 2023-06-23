@@ -4,21 +4,14 @@ const menu = document.querySelector(".aside");
 
 function openMenu() {
   menu.classList.add("active");
-  document.body.classList.add("bg-body");
-
-  const noAside = document.querySelector(".wrapper");
-  noAside.style.WebkitUserSelect = "none";
-  noAside.style.msUserSelect = "none";
-  noAside.style.userSelect = "none";
 }
 
 function hideMenu() {
   menu.classList.remove("active");
-  document.body.classList.remove("bg-body");
 }
 
 window.addEventListener("click", (e) => {
-  if (e.target !== openButton.querySelector("img") && e.target !== menu) {
+  if (e.target === menu) {
     hideMenu();
   }
 });
