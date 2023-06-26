@@ -1,8 +1,13 @@
 @use "./colors" as *;
+@use "./midia_queries" as *;
 
 .features {
   background-color: $neutral-very-dark-blue;
   padding: 1rem;
+
+  @include desktop {
+    grid-column: 3;
+  }
 
   &__title {
     font-size: 1.8em;
