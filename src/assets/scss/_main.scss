@@ -1,5 +1,15 @@
+@use "./midia_queries" as *;
+
 .main {
   &__container > *:not(:last-of-type) {
     margin-block-end: 2.5rem;
+  }
+
+  &__container {
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 2rem;
+    }
   }
 }
