@@ -1,6 +1,19 @@
 @use "./colors" as *;
+@use "./midia_queries" as *;
 
 .intro {
+  @include desktop {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  picture {
+    @include desktop {
+      grid-column: 1 / 3;
+    }
+  }
+
   & > * {
     margin-block-start: 1rem;
   }
@@ -10,6 +23,11 @@
     font-size: 2.5em;
     line-height: 1;
     color: $neutral-very-dark-blue;
+
+    @include desktop {
+      grid-row: 2 / 4 span;
+      font-size: 4.1em;
+    }
   }
 
   &__paragraph {
@@ -30,6 +48,10 @@
     &:hover,
     &:focus {
       background-color: $neutral-very-dark-blue;
+    }
+
+    @include desktop {
+      grid-column: -2;
     }
   }
 }
