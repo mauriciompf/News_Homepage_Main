@@ -30,9 +30,11 @@
 
   &__list-item a {
     color: $neutral-off-white;
+    transition: all ease-in-out 300ms;
 
     @include desktop {
       color: $neutral-dark-grayish-blue;
+      font-size: 1.1em;
     }
   }
 
